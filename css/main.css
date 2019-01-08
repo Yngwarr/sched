@@ -6,7 +6,118 @@ html {
 }
 
 body {
-	background-color: #100029;
-	font-size: 1.6rem;
-	color: #f5f5f5;
+	/*background-color: #100029;*/
+	background-color: #000;
+	font-size: 1.8rem;
+	/*color: #f5f5f5;*/
+	color: #aaa;
+	font-family: 'Roboto', monospace;
 }
+
+input:checked + label {
+	color: #a0a;
+}
+
+a {
+	color: #0aa;
+}
+
+main {
+	width: 100vw;
+	min-height: 90vh;
+}
+
+main > div {
+	width: 70vw;
+	margin: 1rem auto;
+}
+
+main h1 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	margin: 1rem auto;
+	text-align: center;
+	color: #5ff;
+}
+
+h1.today {
+	color: #f5f;
+}
+
+h1.today ~ * {
+	color: #fff;
+}
+
+.hidden {
+	display: none;
+}
+
+label {
+	user-select: none;
+}
+
+header {
+	/*background-color: #9ce4c7;*/
+	background-color: #fff;
+	/*color: #100029;*/
+	color: #000;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.ctl {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+header p, footer p {
+	padding: .5rem;
+}
+
+header em {
+	color: #0aa;
+}
+
+footer em {
+	color: #aa0;
+}
+
+footer {
+	background-color: #555;
+	color: #000;
+}
+
+.time {
+	color: #55f;
+}
+
+.dash {
+	color: #5ff;
+}
+
+/*.course {*/
+	/*color: #ff5;*/
+/*}*/
+
+.proff {
+	color: #ff5;
+}
+
+@media screen and (max-width: 600px) {
+	main > div {
+		width: 95vw;
+	}
+	header {
+		background-color: #555;
+		color: #aaa;
+	}
+	header em {
+		color: #aa0;
+	}
+	input:checked + label {
+		color: #aa0;
+	}
+}
+

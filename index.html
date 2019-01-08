@@ -3,19 +3,30 @@
 	<head>
 		<meta charset='utf-8'>
 		<title>Timetable, man!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href='css/main.css' rel='stylesheet'>
 		<script src='js/3rd/underscore.js'></script>
+		<script src='js/3rd/week.js'></script>
 		<script src='js/main.js'></script>
 	</head>
 	<body onload='init()'>
 		<header>
-			<p>Сегодня 8 января | идёт 20 неделя | показываю чётную неделю</p>
-			<p>
-				<a href='#'>Другая неделя</a>
-				<a href='#'>Полные предметы</a>
+			<p><span id='date'>8 января</span> <em>|</em> идёт <span id='week-num'>20</span> неделя <em>|</em> показываю <span class='odd'>не</span>чётную неделю</p>
+			<p class='ctl'>
+				<span><input type='checkbox' id='full-course' checked onchange='shorten("c")'><label for='full-course'>Полные предметы</label></span>
+				<span><input type='checkbox' id='full-proff' checked onchange='shorten("p")'><label for='full-proff'>Полные имена</label></span>
+				<span><input type='checkbox' id='week' onchange='toggle_week(this.checked)'><label for='week'>Другая неделя</label></span>
 			</p>
 		</header>
 		<main>
 		</main>
+		<footer>
+			<p>
+				Актуальные данные <a href='https://ciu.nstu.ru/student/time_table_view?idgroup=31578&fk_timetable=36306'>тут</a>
+				<em>|</em> Цветовая схема <a href='https://lospec.com/palette-list/color-graphics-adapter'>CGA</a>
+				<em>|</em> Игры лежат <a href='https://yngwarr.itch.io'>тут</a>
+			</p>
+		</footer>
 	</body>
 </html>
