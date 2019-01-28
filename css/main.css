@@ -97,6 +97,12 @@ footer {
 	color: #5ff;
 }
 
+.aud {
+	display: inline-block;
+	color: #f55;
+	width: 6ch;
+}
+
 /*.course {*/
 	/*color: #ff5;*/
 /*}*/
