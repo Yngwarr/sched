@@ -112,6 +112,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+	html {
+		font-size: 6px;
+	}
 	main > div {
 		width: 95vw;
 	}
