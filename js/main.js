@@ -203,7 +203,7 @@ function up_date() {
 let week_num;
 
 function init() {
-    week_num = (new Date()).getWeek() - 5;
+    week_num = (new Date()).getWeek() - 35;
     document.getElementById('week-num').textContent = week_num.toString();
     up_date();
     show_sched(sched);
